@@ -3,14 +3,14 @@ import userController from '../controllers/user'
 
 const user=Router()
 
-user.get('/',userController.getAll)
+user.get('/usuarios',userController.getAll)
 
-user.get('/:id',userController.getById)
+user.get('/usuario/:id',userController.getById)
 
-user.post('/',userController.create)
+user.post('/crear',userController.create)
 
-user.put('/:id',userController.getByIdUpdate)
+user.put('/actualizar/:id',userController.getByIdUpdate)
 
-user.delete('/:id',userController.getByIdDelete)
+user.delete('/borrar/:id',userController.getByIdDelete)
 
 export default user

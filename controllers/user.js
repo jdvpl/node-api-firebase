@@ -7,6 +7,7 @@ const getAll=async(req,res)=>{
     let arr=[]
     userData.forEach(element => {
         const user=new User({
+            id:element.data().id,
             name: element.data().name,
             email: element.data().email,
             password: element.data().password,
