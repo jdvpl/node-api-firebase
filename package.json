@@ -1,0 +1,22 @@
+{
+  "name": "node-api-firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jdvpl/node-api-firebase",
+  "author": "JDVPL <juanda554242@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.1",
+    "firebase": "^8.6.3",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.8"
+  }
+}
